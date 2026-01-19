@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name — Visual Narratives</title>
+
+  <!-- Fonts: modern editorial + subtle gothic -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #000000;
+      --bg-soft: #0b0b0b;
+      --text: #f3f3f3;
+      --muted: #9a9a9a;
+      --accent: #c084fc;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--text);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+
+    a:hover { border-color: var(--accent); }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 96px 24px 64px;
+    }
+
+    header {
+      max-width: 720px;
+      margin-bottom: 160px;
+    }
+
+    h1 {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(2.8rem, 5vw, 4rem);
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      margin-bottom: 24px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    nav {
+      margin-top: 40px;
+      display: flex;
+      gap: 32px;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    section {
+      margin-bottom: 180px;
+    }
+
+    h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 1.6rem;
+      letter-spacing: 0.1em;
+      margin-bottom: 56px;
+      font-weight: 400;
+    }
+
+    /* WORKS – cinematic vertical rhythm */
+    .works {
+      display: flex;
+      flex-direction: column;
+      gap: 120px;
+    }
+
+    .work {
+      max-width: 900px;
+    }
+
+    .work img {
+      width: 100%;
+      display: block;
+      margin-bottom: 16px;
+    }
+
+    .caption {
+      color: var(--muted);
+      font-size: 0.85rem;
+      letter-spacing: 0.04em;
+    }
+
+    /* ABOUT */
+    .about {
+      max-width: 640px;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid #1a1a1a;
+      padding-top: 48px;
+      color: var(--muted);
+      font-size: 0.85rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    @media (max-width: 700px) {
+      header { margin-bottom: 120px; }
+      section { margin-bottom: 120px; }
+      .works { gap: 80px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <h1>Your Name</h1>
+      <p class="subtitle">
+        Comic artist & illustrator focused on atmosphere, narrative rhythm and
+        emotional subtext. I create visual stories that live between panels.
+      </p>
+      <nav>
+        <a href="#works">Works</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section id="works">
+      <h2>Selected Works</h2>
+      <div class="works">
+        <div class="work">
+          <img src="images/work1.jpg" alt="Project title" />
+          <div class="caption">Project title · Comic / Illustration · 2025</div>
+        </div>
+        <div class="work">
+          <img src="images/work2.jpg" alt="Project title" />
+          <div class="caption">Project title · Personal work · 2024</div>
+        </div>
+        <div class="work">
+          <img src="images/work3.jpg" alt="Project title" />
+          <div class="caption">Project title · Narrative sequence · 2023</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p class="about">
+        I work primarily with comics and sequential imagery. My interests lie in
+        mood, silence and the space between actions. Influenced by underground
+        comics, music culture and slow storytelling.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="about">
+        <a href="mailto:yourmail@email.com">yourmail@email.com</a><br />
+        Instagram · Bluesky · ArtStation
+      </p>
+    </section>
+
+    <footer>
+      <span>© 2026 Your Name</span>
+      <span>Hosted on GitHub Pages</span>
+    </footer>
+
+  </div>
+</body>
+</html>
